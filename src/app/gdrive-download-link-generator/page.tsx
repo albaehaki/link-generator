@@ -1,4 +1,8 @@
+"use client"
 import React from "react";
+
+import gDriveLinkGenerator from "@/hooks/g-drive-link-generator"; 
+import useGdriveLink from "@/store/gdriveLinkStore";
 
 function page() {
   return (

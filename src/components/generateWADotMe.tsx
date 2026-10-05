@@ -21,7 +21,6 @@ function page() {
 
   const { getWaLinkGenerator } = waLinkGenerator()
 
-  console.log(linkWADotMe)
 
   return (
     <>

@@ -1,5 +1,5 @@
 "use client"
-import React, {useState} from "react";
+import React, { useState } from "react";
 
 import useWADotMeStore from "@/store/wadotmeStore";
 
@@ -7,7 +7,7 @@ import waLinkGenerator from "@/hooks/wa-link-generator";
 import Link from 'next/link'
 
 const getWaDotMe = () => {
-    const [isCopy, setIsCopy] = useState(false)
+  const [isCopy, setIsCopy] = useState(false)
   const handleChangeNomerWA = useWADotMeStore(
     (state) => state.handleChangeNomerWA
   );
@@ -30,13 +30,13 @@ const getWaDotMe = () => {
         }}
         className="bg-green-600 text-white px-5 py-2 rounded-md w-full m-auto shadow-lg"
       >
-        {isCopy? 'Sudah dicopy' : 'Copy Link'}
+        {isCopy ? 'Sudah dicopy' : 'Copy Link'}
       </button>
 
 
 
       <Link
-       href={`/wa-link-generator`}
+        href={`/wa-link-generator`}
         onClick={(event: any) => {
           event.preventDefault();
           setIsCopy(false)
@@ -44,7 +44,7 @@ const getWaDotMe = () => {
         }}
         className="bg-green-600 text-white px-5 py-2 rounded-md w-full m-auto shadow-lg"
       >
-         {/* <Link href={`/wa-link-generator`} className={boxMenu}></Link> */}
+        {/* <Link href={`/wa-link-generator`} className={boxMenu}></Link> */}
         Buat link lainnya
       </Link>
     </>
